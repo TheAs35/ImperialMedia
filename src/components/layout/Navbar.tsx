@@ -1,10 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { cn } from '../../utils/cn';
 import { Button } from '../ui/Button';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,11 +62,37 @@ export const Navbar: React.FC = () => {
               Diagnóstico Gratuito
             </Button>
           </a>
-          <button className="md:hidden">
-            <Menu className="w-6 h-6" />
+          <button 
+            className="md:hidden p-2 -mr-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={cn(
+          "fixed inset-0 bg-charcoal/95 backdrop-blur-xl transition-all duration-500 flex flex-col items-center justify-center p-6",
+          isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        )}
+      >
+        <div className="flex flex-col items-center gap-8 font-serif italic text-4xl text-cream">
+          <a href="#sobre" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Sobre Nós</a>
+          <a href="#metodo" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Método</a>
+          <a href="#cases" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Cases</a>
+          <a href="#servicos" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Serviços</a>
+        </div>
+        
+        <div className="mt-12 flex flex-col items-center gap-6">
+          <a href="https://api.whatsapp.com/send/?phone=5511940542386&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>
+            <Button variant="primary" size="lg">
+              Diagnóstico Gratuito
+            </Button>
+          </a>
+        </div>
+      </div>
     </header>
   );
 };

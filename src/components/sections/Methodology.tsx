@@ -38,7 +38,7 @@ const ShufflerCard = () => {
         >
           <div className="font-mono text-[10px] text-cream/40 uppercase mb-2">System.Audit_{item.id}</div>
           <div className="font-sans font-bold text-lg">{item.label}</div>
-          <div className="font-serif italic text-moss text-sm mt-1">{item.detail}</div>
+          <div className="font-serif italic text-moss-light text-sm mt-1">{item.detail}</div>
         </div>
       ))}
     </div>
@@ -93,10 +93,10 @@ const TypewriterCard = () => {
         </span>
         <span className="font-mono text-[10px] text-clay uppercase tracking-widest">Neural Stream</span>
       </div>
-      <div className="font-mono text-xs text-moss mt-auto break-words">
+      <div className="font-mono text-xs text-moss-light mt-auto break-words">
         <span className="text-gray-600 mr-2">{'>'}</span>
         {text}
-        <span className="animate-pulse bg-moss w-1.5 h-3.5 inline-block ml-1 align-middle"></span>
+        <span className="animate-pulse bg-moss-light w-1.5 h-3.5 inline-block ml-1 align-middle"></span>
       </div>
     </div>
   );
@@ -125,8 +125,8 @@ const SchedulerCard = () => {
           <div key={i} className="flex flex-col items-center justify-between h-full">
             <span className="font-mono text-[10px] text-cream/40">{d}</span>
             <div className="w-full h-full bg-cream/5 rounded flex flex-col gap-1 p-0.5">
-              {i % 2 === 0 && <div className="w-full h-1.5 bg-moss/30 rounded-sm"></div>}
-              {i === 2 && <div className="w-full h-1.5 bg-moss rounded-sm"></div>}
+              {i % 2 === 0 && <div className="w-full h-1.5 bg-moss-light/30 rounded-sm"></div>}
+              {i === 2 && <div className="w-full h-1.5 bg-moss-light rounded-sm"></div>}
             </div>
           </div>
         ))}
@@ -136,8 +136,8 @@ const SchedulerCard = () => {
           <path d="M5.5 3.21V20.8C5.5 21.45 6.27 21.76 6.71 21.26L11.43 15.92L15.43 23.36C15.63 23.73 16.09 23.87 16.46 23.67L18.66 22.48C19.03 22.28 19.17 21.82 18.97 21.45L15 14H20.5C21.13 14 21.46 13.25 21 12.82L6.5 3.12C5.97 2.76 5.5 3.1 5.5 3.3Z" fill="white" stroke="black" strokeWidth="1.5"/>
         </svg>
       </div>
-      <div className="flex justify-between items-center bg-moss/10 px-3 py-2 rounded-md border border-moss/20">
-        <span className="font-mono text-[10px] uppercase tracking-wider text-moss">Deploy Automático</span>
+      <div className="flex justify-between items-center bg-moss-light/10 px-3 py-2 rounded-md border border-moss-light/20">
+        <span className="font-mono text-[10px] uppercase tracking-wider text-moss-light">Deploy Automático</span>
       </div>
     </div>
   );
@@ -149,7 +149,7 @@ export const Methodology: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-24 max-w-3xl">
           <span className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-6 block">O Motor de Crescimento</span>
-          <h2 className="font-serif italic text-5xl md:text-7xl leading-tight text-moss">
+          <h2 className="font-serif italic text-5xl md:text-7xl leading-tight text-moss-light">
             A Natureza é o Algoritmo.
           </h2>
           <p className="font-sans text-xl opacity-80 mt-6 max-w-xl">
@@ -164,7 +164,7 @@ export const Methodology: React.FC = () => {
               Entendemos profundamente o seu negócio, mercado e concorrência. Nada de receita pronta.
             </p>
             <div className="mt-auto relative w-full pt-8 border-t border-cream/5">
-              <div className="absolute inset-0 bg-moss/5 rounded-xl blur-xl transition-all group-hover:bg-moss/10" />
+              <div className="absolute inset-0 bg-moss-light/5 rounded-xl blur-xl transition-all group-hover:bg-moss-light/10" />
               <ShufflerCard />
             </div>
           </div>
@@ -175,7 +175,7 @@ export const Methodology: React.FC = () => {
               Montamos um plano imersível e algorítmico: canais certos, formatos precisos e gatilhos magnéticos.
             </p>
             <div className="mt-auto relative w-full pt-8 border-t border-cream/5">
-              <div className="absolute inset-0 bg-moss/5 rounded-xl blur-xl transition-all group-hover:bg-moss/10" />
+              <div className="absolute inset-0 bg-moss-light/5 rounded-xl blur-xl transition-all group-hover:bg-moss-light/10" />
               <TypewriterCard />
             </div>
           </div>
@@ -186,7 +186,7 @@ export const Methodology: React.FC = () => {
               Direção de arte premium com cadência matemática. Ajustes de rota guiados pela telemetria.
             </p>
             <div className="mt-auto relative w-full pt-8 border-t border-cream/5">
-              <div className="absolute inset-0 bg-moss/5 rounded-xl blur-xl transition-all group-hover:bg-moss/10" />
+              <div className="absolute inset-0 bg-moss-light/5 rounded-xl blur-xl transition-all group-hover:bg-moss-light/10" />
               <SchedulerCard />
             </div>
           </div>

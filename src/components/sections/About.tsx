@@ -58,19 +58,19 @@ export const About: React.FC = () => {
             <div className="about-text grid grid-cols-2 gap-x-8 gap-y-8 mt-8 p-10 bg-charcoal text-cream rounded-[2rem] shadow-2xl">
               <div className="flex flex-col gap-2">
                 <span className="font-sans text-xs uppercase tracking-widest text-cream/50">Especialidade</span>
-                <span className="font-serif italic text-xl md:text-2xl text-moss">Marketing Digital</span>
+                <span className="font-serif italic text-xl md:text-2xl text-moss-light">Marketing Digital</span>
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-sans text-xs uppercase tracking-widest text-cream/50">Foco</span>
-                <span className="font-serif italic text-xl md:text-2xl text-moss">Crescimento Orgânico</span>
+                <span className="font-serif italic text-xl md:text-2xl text-moss-light">Crescimento Orgânico</span>
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-sans text-xs uppercase tracking-widest text-cream/50">Abordagem</span>
-                <span className="font-serif italic text-xl md:text-2xl text-moss">Estratégia + Dados</span>
+                <span className="font-serif italic text-xl md:text-2xl text-moss-light">Estratégia + Dados</span>
               </div>
               <div className="flex flex-col gap-2">
                 <span className="font-sans text-xs uppercase tracking-widest text-cream/50">Atendimento</span>
-                <span className="font-serif italic text-xl md:text-2xl text-moss">Exclusivo & Seletivo</span>
+                <span className="font-serif italic text-xl md:text-2xl text-moss-light">Exclusivo & Seletivo</span>
               </div>
             </div>
           </div>

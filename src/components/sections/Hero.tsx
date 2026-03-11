@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
           </span>
           <span 
             ref={title2Ref}
-            className="font-serif italic text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-moss mt-2"
+            className="font-serif italic text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-moss-light mt-2"
           >
             Mas pode ir além.
           </span>
@@ -64,19 +64,19 @@ export const Hero: React.FC = () => {
 
         <div ref={statsRef} className="mt-16 md:mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-16 border-t border-cream/20 pt-8 w-full max-w-5xl">
           <div className="flex flex-col gap-1">
-            <span className="font-serif italic text-3xl md:text-4xl text-moss">R$ 100k+</span>
+            <span className="font-serif italic text-3xl md:text-4xl text-moss-light">R$ 100k+</span>
             <span className="font-sans text-xs uppercase tracking-widest text-cream/50">Faturamento em 1 lançamento</span>
           </div>
           <div className="flex flex-col gap-1">
-            <span className="font-serif italic text-3xl md:text-4xl text-moss">7,2 mi</span>
+            <span className="font-serif italic text-3xl md:text-4xl text-moss-light">7,2 mi</span>
             <span className="font-sans text-xs uppercase tracking-widest text-cream/50">Visualizações em campanha</span>
           </div>
           <div className="flex flex-col gap-1">
-            <span className="font-serif italic text-3xl md:text-4xl text-moss">9M+</span>
+            <span className="font-serif italic text-3xl md:text-4xl text-moss-light">9M+</span>
             <span className="font-sans text-xs uppercase tracking-widest text-cream/50">Visualizações orgânicas</span>
           </div>
           <div className="flex flex-col gap-1">
-            <span className="font-serif italic text-3xl md:text-4xl text-moss">75k</span>
+            <span className="font-serif italic text-3xl md:text-4xl text-moss-light">75k</span>
             <span className="font-sans text-xs uppercase tracking-widest text-cream/50">Seguidores sem tráfego pago</span>
           </div>
         </div>

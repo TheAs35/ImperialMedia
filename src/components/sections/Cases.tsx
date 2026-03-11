@@ -154,8 +154,8 @@ export const Cases: React.FC = () => {
                 {c.artifact === 'EKGWave' && <EKGWave />}
                 
                 <div className="absolute bottom-0 right-0 p-8 z-20">
-                  <div className="flex items-center gap-3 font-mono text-xs text-moss">
-                    <span className="w-2 h-2 rounded-full bg-moss animate-pulse"></span>
+                  <div className="flex items-center gap-3 font-mono text-xs text-moss-light">
+                    <span className="w-2 h-2 rounded-full bg-moss-light animate-pulse"></span>
                     TELEMETRIA ON
                   </div>
                 </div>
