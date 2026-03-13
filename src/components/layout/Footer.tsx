@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-charcoal text-cream rounded-t-[4rem] mt-24 pt-24 pb-12 px-6 md:px-12 relative overflow-hidden border-t border-cream/10 z-10">
+    <footer className="bg-charcoal text-cream rounded-t-[4rem] mt-8 pt-16 pb-12 px-6 md:px-12 relative overflow-hidden border-t border-cream/10 z-10">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16 relative z-10">
         <div className="max-w-md">
           <h2 className="font-sans text-4xl mb-6 font-bold tracking-tight">

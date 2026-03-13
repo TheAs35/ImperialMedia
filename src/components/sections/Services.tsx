@@ -18,8 +18,8 @@ export const Services: React.FC = () => {
     <section id="servicos" className="py-32 px-6 md:px-12 bg-charcoal text-cream relative">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
         
-        <div className="mb-24 flex flex-col items-center">
-          <span className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-6">Operações e Estrutura</span>
+        <div className="mb-12 flex flex-col items-center">
+          <span className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Operações e Estrutura</span>
           <h2 className="font-serif italic text-5xl md:text-7xl mb-6 max-w-3xl">
             Tudo sob o mesmo teto.
           </h2>

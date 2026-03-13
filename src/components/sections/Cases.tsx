@@ -120,7 +120,7 @@ export const Cases: React.FC = () => {
 
   return (
     <section id="cases" className="bg-charcoal text-cream relative w-full" ref={containerRef}>
-      <div className="pt-32 pb-12 px-6 md:px-12 text-center max-w-4xl mx-auto">
+      <div className="pt-16 pb-4 px-6 md:px-12 text-center max-w-4xl mx-auto">
         <h2 className="font-serif italic text-5xl md:text-7xl mb-6">Resultados Clínicos</h2>
         <p className="font-sans text-lg text-cream/60">
           Resultados reais de clientes reais. Cada case é a prova de que estratégia mais execução igual a um crescimento previsível e incontestável.
