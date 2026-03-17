@@ -53,6 +53,7 @@ export const Navbar: React.FC = () => {
           <a href="#sobre" className="hover:opacity-70 transition-opacity">Sobre Nós</a>
           <a href="#metodo" className="hover:opacity-70 transition-opacity">Método</a>
           <a href="#cases" className="hover:opacity-70 transition-opacity">Cases</a>
+          <a href="#depoimentos" className="hover:opacity-70 transition-opacity">Depoimentos</a>
           <a href="#servicos" className="hover:opacity-70 transition-opacity">Serviços</a>
         </div>
 
@@ -82,6 +83,7 @@ export const Navbar: React.FC = () => {
           <a href="#sobre" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Sobre Nós</a>
           <a href="#metodo" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Método</a>
           <a href="#cases" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Cases</a>
+          <a href="#depoimentos" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Depoimentos</a>
           <a href="#servicos" onClick={() => setIsMenuOpen(false)} className="hover:text-moss-light transition-colors">Serviços</a>
         </div>
         
